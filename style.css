@@ -1,0 +1,157 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* position: relative; */
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: black;
+}
+
+#bgVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+h1 {
+  font-family: 'Helvetica';
+  font-weight: 100;
+  color: white;
+  font-size: 100px;
+  letter-spacing: 2px;
+  margin-left: 100px;
+  width: 20%;
+}
+
+span {
+  color: #37302a;
+  /* text-shadow: 1px 1px 2px white; */
+}
+
+span:hover {
+  cursor:pointer;
+}
+
+h2 {
+  font-family: 'Helvetica';
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 2px;
+  position: relative;
+  top: 80px;
+  color: white;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-basis: 100%;
+  color: white;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-inline-start: 0;
+  margin-top: 75px;
+}
+
+li {
+  font-family: 'Helvetica';
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+li:hover {
+  cursor: pointer;
+}
+
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#sunny {
+  background-image: url('ivana-cajina-dQejX2ucPBs-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 125px;
+}
+
+#rain {
+  background-image: url('glenn-carstens-peters-tT_SrSMhhgE-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 125px;
+}
+
+#cloudy {
+  background-image: url('florian-zeh-eLWPw5aXXn8-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 125px;
+}
+
+#thunderstorm {
+  background-image: url('levi-guzman-wF5z4_JzxaU-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 125px;
+}
+
+#snow {
+  background-image: url('brian-jones-s8QSJTJI6qg-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 125px;
+  color: black;
+}
+
+#fog {
+  background-image: url('samuel-ferrara-TXtQe_b5_Xw-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 125px;
+}
